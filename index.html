@@ -8,7 +8,9 @@
   <title>Chris Aylen - Portfolio</title>
   <link rel="stylesheet" href="./assets/styles/bulma-rtl.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./assets/styles/debug.css"> -->
 </head>
 
@@ -70,82 +72,233 @@
 
 
 
-  <style>
-    .hero {
-      background: url(./assets/images/hero-1.jpg) center / cover;
-    }
-  </style>
-  <div class="columns">
-    <div class="column">
-      First column
-    </div>
-  </div>
-  <section class="hero is-fullheight">
+  <section class="hero">
     <div class=hero-body>
-      <container>
-        <div class="card" style="max-width: 512px;">
-          <div class="card-image">
-            <figure class="image is-4by4">
-              <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
-            </figure>
-          </div>
-          <header class="card-header">
-            <p class="card-header-title">
-              Project 1
-            </p>
-            <button class="card-header-icon" aria-label="more options">
-              <span class="icon">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              This is a simple password generator written in Javascript. The user can generate a password with any
-              combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
-                <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
-                <br>
+      <!-- <img src="./assets/images/logo3.png" class="logoImage"> -->
+      <figure class="logoImage center">
+        <img src="./assets/images/logo4.png" style="max-width: 256px;">
+      </figure>
 
-            </div>
-          </div>
-
-        </div>
-
-      </container>
-      <container style="padding: 10px;">
-        <div class="card" style="max-width: 512px;">
-          <div class="card-image">
-            <figure class="image is-4by4">
-              <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
-            </figure>
-          </div>
-          <header class="card-header">
-            <p class="card-header-title">
-              Project 1
-            </p>
-            <button class="card-header-icon" aria-label="more options">
-              <span class="icon">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              This is a simple password generator written in Javascript. The user can generate a password with any
-              combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
-                <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
-                <br>
-
-            </div>
-          </div>
-
-        </div>
-
-      </container>
     </div>
   </section>
   <!--.hero-->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <article class="media notification is-info">
+            <figure class="media-right">
+              <span class="icon is-medium">
+                <i class="fas fa-2x fa-solid fa-user"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-4">About Me</h1>
+                <p class="is-size-5">
+                  A leader, with software engineering roots, change management specialist and agile evangelist who
+                  operates at c-level. Demonstrable turnaround experience in leading, large-scale departments,
+                  projects and
+                  programmes, in both internal and outsource environments.
+                  Extensive experience with agile software development and delivery using multiple technologies.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <section class="hero is-medium has-carousel">
+    <div id="carousel-demo" class="hero-carousel">
+      <div class="item-1">
+        <!-- Slide Content -->
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+      </div>
+      <div class="item-3">
+        <!-- Slide Content -->
+      </div>
+    </div>
+    <div class="hero-head"></div>
+    <div class="hero-body"></div>
+    <div class="hero-foot"></div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="card" style="max-width: 512px">
+        <div class="card-image">
+          <figure>
+            <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">
+            Project 1
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            This is a simple password generator written in Javascript. The user can generate a password with any
+            combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+              <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+              <br>
+          </div>
+        </div>
+      </div>
+      <div id="carousel-demo" class="carousel">
+        <div class="item-1">
+          <!-- Slide Content -->
+        </div>
+        <div class="item-2">
+          <!-- Slide Content -->
+        </div>
+        <div class="item-3">
+          <!-- Slide Content -->
+        </div>
+      </div>
+      <!-- End Carousel -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script>
+    bulmaCarousel.attach('#carousel-demo', {
+      slidesToScroll: 1,
+      slidesToShow: 4
+    });
+  </script>
+  
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="notification">
+            This is a simple password generator written in Javascript. The user can generate a password with any
+            combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+              <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="notification">
+            Flexbox is a CSS spec that makes sectioning and aligning more natural.
+            We don't need to know Flexbox but it's how Bulma works behind-the-scenes. ⦤(^ー^)⦥
+          </div>
+        </div>
+        <div class="column">
+          <div class="notification">
+            Instead of writing our CSS per-element, we can use predefined classes.
+            With enough classes, we can describe our website design using semantics. ٩(^ᴗ^)۶
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <container>
+
+    <div class="card">
+      <div class="card-image">
+        <figure>
+          <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title">
+          Project 1
+        </p>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          This is a simple password generator written in Javascript. The user can generate a password with any
+          combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+            <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+            <br>
+        </div>
+      </div>
+    </div>
+
+  </container>
+  <container>
+
+    <div class="card" style="max-width: 512px;">
+      <div class="card-image">
+        <figure class="image is-4by4">
+          <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title">
+          Project 1
+        </p>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          This is a simple password generator written in Javascript. The user can generate a password with any
+          combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+            <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+            <br>
+
+        </div>
+      </div>
+
+    </div>
+
+  </container>
+  <container style="padding: 10px;">
+    <div class="card" style="max-width: 512px;">
+      <div class="card-image">
+        <figure class="image is-4by4">
+          <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title">
+          Project 1
+        </p>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          This is a simple password generator written in Javascript. The user can generate a password with any
+          combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+            <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+            <br>
+
+        </div>
+      </div>
+
+    </div>
+
+  </container>
 </body>
 
 </html>
