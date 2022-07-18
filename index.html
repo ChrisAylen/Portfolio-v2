@@ -34,7 +34,7 @@
         <a class="navbar-item" href="https://github.com/ChrisAylen">
           GitHub
         </a>
-<!-- ToDo: Refactor this to pull starred projects directly from Github -->
+        <!-- ToDo: Refactor this to pull starred projects directly from Github -->
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             Projects
@@ -87,9 +87,7 @@
     </div>
   </nav>
 
-
-
-
+  <!-- Hero -->
   <section class="hero">
     <div class=hero-body>
       <!-- <img src="./assets/images/logo3.png" class="logoImage"> -->
@@ -99,6 +97,7 @@
     </div>
   </section>
 
+  <!-- About me section -->
   <section class="section">
     <div class="container">
       <div class="columns">
@@ -127,11 +126,11 @@
     </div>
   </section>
 
+<!-- Projects Section -->
   <section class="section">
     <container>
       <h1 class="title is-size-3">Projects</h1>
-
-      <div class="card">
+      <div class="card has-background-link-light">
         <h1 class="title is-size-4" id="movieTrans">Movie Translator</h1>
         <div class="card-image">
           <figure class="image is-4by3">
@@ -148,22 +147,22 @@
             <div class="media-content">
               <p class="title is-4">Movie Translator<br>
                 <a class="subtitle is-6" id="movieDemo" href="https://chrisaylen.github.io/Project-1-Fork/">#Demo,</a>
-                <a class="subtitle is-6" id="movieRepo"href="https://github.com/ChrisAylen/Project-1-Fork/">#Github</a> 
+                <a class="subtitle is-6" id="movieRepo" href="https://github.com/ChrisAylen/Project-1-Fork/">#Github</a>
               </p>
-              
+
             </div>
           </div>
-
-          <div class="content">
-            This project translates movies into a language of your choice.<br>
-
+          <div class="content ">
+            <p>This project translates movies into a language of your choice.</p>
           </div>
         </div>
       </div>
     </container>
-  </section>
+<section>
+  <p class="mb-6"></p>
+</section>
 
-  <section class="section">
+    <!-- <section class="section">
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -189,135 +188,107 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
+    <container>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="card" style="max-width:512px ;">
+            <div class="card-image" style="height: 400px;">
+              <figure>
+                <img src="./assets/images/bankheist_main.png" style="max-width: 512px;" alt="Password Generator Image">
+              </figure>
+            </div>
+            <header class="card-header has-background-info-dark">
+              <p class="card-header-title">
+                <a href="https://github.com/ChrisAylen/project-bank-heist" class="has-text-light">Bank 'Heist' a bank you should trust</a>
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content has-background-link-light" style="height: 350px;">
+              <div class="content">
+                <p>The application provides a rudimentary online banking template. It is a full stack application that
+                  primarily utilises Node.js and it employs the MVC pattern.</p>
 
+                <p>The application has a front end that is built using Javascript and Bootstrap and a back end that is
+                  built
+                  using Node.js.</p>
 
+                <p>The back end database uses MySQL.</p>
 
-  <container>
-    <div class="columns">
-      <div class="column">
-        <div class="card" style="max-width:512px ;">
-          <div class="card-image">
-            <figure>
-              <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
-            </figure>
-          </div>
-          <header class="card-header">
-            <p class="card-header-title">
-              Project 1
-            </p>
-            <button class="card-header-icon" aria-label="more options">
-              <span class="icon">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              This is a simple password generator written in Javascript. The user can generate a password with any
-              combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
-                <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
+                <p>The back end also provides a REST API that is used serverside end as well as a REST API that can be
+                  accessed directly from the Front End. Both of these APIs require Authentication.</p>
+                <a href="https://peaceful-lassen-volcanic-80125.herokuapp.com/" class="has-text-link-light" target="_blank">Find a deployed version
+                  here</a>
                 <br>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="card" style="max-width: 512px">
-        <div class="card-image">
-          <figure>
-            <img src="./assets/images/note-taker.png " alt="Password Generator Image">
-          </figure>
+
+        <div class="column">
+          <div class="card" style="max-width: 512px">
+            <div class="card-image" style="height: 400px;">
+              <figure>
+                <img src="./assets/images/note-taker.png " alt="Password Generator Image">
+              </figure>
+            </div>
+            <header class="card-header has-background-warning-dark">
+              <p class="card-header-title ">
+                <a href="https://github.com/ChrisAylen/Note-Taker" class="has-text-light">Note Taker</a>
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content has-background-warning-light" style="height: 350px;">
+              <div class="content">
+                <p>A simple application that allows the user to add and delete personal notes.</p>
+                <a href="https://github.com/ChrisAylen/Note-Taker">Deployed Version</a>
+                <br>
+
+              </div>
+            </div>
+          </div>
+
         </div>
-        <header class="card-header">
-          <p class="card-header-title">
-            Note Taker
-          </p>
-          <button class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </button>
-        </header>
 
-        <div class="card-content">
-          <div class="content">
-            <a href="https://github.com/ChrisAylen/Note-Taker">Note Taker</a>
-            <br>
-            A simple application that allows the user to add and delete personal notes.<br>
-            <a href="https://github.com/ChrisAylen/Note-Taker">Deployed Version</a>
-            <br>
-
+        <div class="column">
+          <div class="card " style="max-width: 512px;">
+            <div class="card-image" style="height: 400px;">
+              <figure class="image is-4by4">
+                <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
+              </figure>
+            </div>
+            <header class="card-header has-background-primary-dark">
+              <p class="card-header-title">
+                <a href="https://github.com/ChrisAylen/PasswordGenerator" class="has-text-light" >Password Generator</a>
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content has-background-success-light" style="height: 350px;">
+              <div class="content">
+                <p>This is a simple password generator written in Javascript. The user can generate a password with any
+                  combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-    </div>
-  </container>
-  <container>
-
-    <div class="card" style="max-width: 512px;">
-      <div class="card-image">
-        <figure class="image is-4by4">
-          <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
-        </figure>
-      </div>
-      <header class="card-header">
-        <p class="card-header-title">
-          Project 1
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          This is a simple password generator written in Javascript. The user can generate a password with any
-          combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
-            <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
-            <br>
-
-        </div>
-      </div>
-
-    </div>
-
-  </container>
-  <container style="padding: 10px;">
-    <div class="card" style="max-width: 512px;">
-      <div class="card-image">
-        <figure class="image is-4by4">
-          <img src="./assets/images/password_gen.png" style="max-width: 512px;" alt="Password Generator Image">
-        </figure>
-      </div>
-      <header class="card-header">
-        <p class="card-header-title">
-          Project 1
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          This is a simple password generator written in Javascript. The user can generate a password with any
-          combination of upper case, lower case, numeric and special characters !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
-            <a href="https://github.com/ChrisAylen/PasswordGenerator">Password Generator</a>
-            <br>
-
-        </div>
-      </div>
-
-    </div>
-
-  </container>
+    </container>
+  </section>
 </body>
 
 </html>
